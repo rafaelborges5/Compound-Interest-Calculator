@@ -1,0 +1,26 @@
+print("Compound Interest Calculator")
+amount = input("Please enter the amount here: ")
+interest = input("Please enter the yearly interest rate here: ")
+time = input("Please enter the number of years that the amount will be compounded here:")
+def comp_calc(amount, interest, time):
+    result1 = float(interest) / 100
+    result2 = result1 + 1
+    for index in range(int(time)):
+        amount = float(amount) * result2
+    return amount
+print("With the power of compound interest, you would finish the " + str(time) + " year(s) with an amount of " + str(comp_calc(amount, interest, time)) + "!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
